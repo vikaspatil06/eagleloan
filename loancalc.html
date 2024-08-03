@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagle Loan Services</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/settings.css" rel="stylesheet" type="text/css">
+    <link href="css/layers.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-layout2.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-2.css"> -->
+</head>
+
+<style>
+body{
+    size: 10px;
+}
+.calculator {
+    background: #BFEEFF;
+    padding: 22px;
+    padding-right: 62px;
+    margin: 10%;
+    margin-top: 0%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    animation: slideIn 2s ease-out;
+}
+
+h4 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    text-size-adjust: 9px;
+}
+
+input[type="range"] {
+    width: 101.5%;
+    appearance: none;
+    height: 7px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+button {
+    width: 101.5%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+    animation: tableFadeIn 1s ease-in-out;
+}
+
+#emi-table{
+    width: 80%;
+    padding: 22px;
+    padding-right: 62px;
+    margin: 10%;
+    animation: slideIn 5s ease-out;
+}
+
+thead {
+    background: #007BFF;
+    color: white;
+
+}
+
+th, td {
+        border: 0.5px solid black;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes tableFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+    </style>
+</head>
+<body>
+        <!-- <div class="page-wrapper">
+<div class="preloader"></div> -->
+
+
+
+
+<!-- Navbar Start -->
+<header class="main-header header-style-two">
+    <div class="header-lower">
+
+<div class="main-box">
+
+
+<div class="nav-logo">
+<div class="logo"><a href="index.html"><img style="width: 20%; margin-left: 70px;" src="images/logo.png" alt="Logo" title="eagleloan"></a></div>
+</div>
+
+<div class="nav-outer" style="padding: 39px 0 -1px;">
+<nav class="nav main-menu" style="margin: 0;">
+<ul class="navigation" style="margin: 0; ">
+<li class="" style="padding: 39px 0 -1px;"><a href="index.html">Home</a>
+
+<li style="padding: 39px 0 -1px;"><a href="about.html">About Us</a></li>
+<li class="dropdown" style="padding: 39px 0 -1px;"><a>Services</a>
+<ul>
+    <li><a href="insurance.html">Insurance</a></li>
+    <li><a href="personaloan.html">Personal loan</a></li>
+    <li><a href="businessloan.html">Business loan</a></li>
+    <li><a href="homeloan.html">Home loan</a></li>
+    <li><a href="carloan.html">Car loan</a></li>
+    <li><a href="educationloan.html">Education loan</a></li>
+</ul>
+</li>
+<li style="padding: 39px 0 -1px;"><a href="loancalc.html">Calculator</a></li>
+<li style="padding: 39px 0 -1px;"><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+</div>
+
+
+<div class="mobile-menu mobile-menu-two">
+<div class="menu-backdrop"></div>
+
+<nav class="menu-box">
+<div class="upper-box">
+<div class="nav-logo" style="width: 30%;"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+<div class="close-btn"><i class="icon fa fa-times"></i></div>
+</div>
+<ul class="navigation clearfix" style="margin: 0;">
+
+</ul>
+<ul class="contact-list-one">
+<li>
+<i class="icon lnr-icon-phone-handset"></i>
+<span class="title">Call Now</span>
+<div class="text"><a href="tel:9284811005">9284811005</a></div>
+</li>
+<li>
+<i class="icon lnr-icon-envelope1"></i>
+<span class="title">Send Email</span>
+<div class="text"><a href="mailto:.com"><span class="__cf_email__" data-cfemail="3e6d4b4e4e514c4a7e535f5752105d5153">[email�&nbsp;protected]</span></a></div>
+</li>
+<li>
+<i class="icon lnr-icon-map-marker"></i>
+<span class="title">Address</span>
+<div class="text">JSPM ROAD, NEAR MUKESH MARKET, NARHE 411041</div>
+</li>
+
+<ul class="social-links">
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</nav>
+</div>
+
+<div class="search-popup">
+<span class="search-back-drop"></span>
+<button class="close-search"><span class="fa fa-times"></span></button>
+<div class="search-inner">
+<form method="post" action="blog-showcase.html">
+<div class="form-group">
+<input type="search" name="search-field" value="" placeholder="Search..." required="">
+<button type="submit"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+</div>
+
+
+<div class="sticky-header sticky-header-style-two">
+<div class="auto-container">
+<div class="inner-container" style="">
+
+<div class="logo" >
+<a href="index.html" ><img style="width: 200%;" src="images/logo.png" alt=""></a>
+</div>
+
+<div class="nav-outer">
+
+<nav class="main-menu">
+<div class="navbar-collapse show collapse clearfix">
+<ul class="navigation clearfix">
+
+</ul>
+</div>
+</nav>
+
+<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+</div>
+</div>
+</div>
+</div>
+
+</header>
+<!-- Navbar End -->
+
+
+
+
+
+
+
+
+<!-- Calculator Section Start -->
+    <div class="calculator">
+        <h4 style="padding-left: 20px;">Loan Calculator</h4>
+        <form id="loan-form" style="padding-left: 20px;">
+            <label for="amount">Loan Amount: <span id="amount-value">50000</span></label>
+            <input type="range" id="amount" min="50000" max="10000000" step="1000" value="50000" oninput="updateValue('amount')">
+
+            <label for="interest">Interest Rate (%): <span id="interest-value">0</span></label>
+            <input type="range" id="interest" min="5" max="15" step="0.1" value="0" oninput="updateValue('interest')">
+
+            <label for="years">Years to Repay: <span id="years-value">0</span></label>
+            <input type="range" id="years" min="1" max="31" step="1" value="0" oninput="updateValue('years')">
+
+            <button type="button" onclick="calculateEMI()" style="margin-top: 10px;">Calculate EMI</button>
+        </form>
+        <h6 style="padding-top: 15px; padding-left: 25px;">Monthly EMI: <span id="emi">0.00</span></h6>
+    </div>
+    <div>
+        <table id="emi-table">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Beginning Balance</th>
+                    <th>EMI</th>
+                    <th>Principal</th>
+                    <th>Interest</th>
+                    <th>Ending Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+<section class="call-to-action" style="margin-bottom: 20px; margin-left: 100px;">
+        <div class="bg bg-image" style="background-image: url(images/bg-call-1.jpg)"></div>
+        <div class="auto-container">
+        <div class="outer-box">
+        <div class="title-box">
+        <h3 class="title">Simply share your contacts <br>with us and we will get you</h3>
+        </div>
+        <div class="btn-box">
+        <ul class="list-style-one">
+        <li><i class="icon fa-light fa-phone-volume"></i><a href="tel:+8857002451"><span>Call to Our Experts</span><br>+91 9284811005</a></li>
+        </ul>
+        <a href="contact.html"><button class="theme-btn btn-style-one hover-light"><span class="btn-title">Get A quote</span><i class="icon fa-regular fa-arrow-right"></i></button></a>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+
+
+
+    <footer class="main-footer footer-style-one">
+        <div class="bg bg-image" style="background-image:url(images/bg-footer1.jpg);"></div>
+        <div class="footer-pattren4 bounce-x"></div>
+        
+        <div class="widgets-section">
+        <div class="auto-container">
+        <div class="row">
+        
+        <div class="footer-column col-xl-4 col-md-6 col-sm-6">
+        <div class="footer-widget about-widget">
+        <div class="logo" style="width: 30%;"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+        <div class="text">Welcome to Eagle Loan - Your go-to for personalized financial solutions. We empower individuals and businesses with transparent, reliable, and accessible loan services. Your trusted financial partner for success.</div>
+        <ul class="social-icon">
+        <li><a href="#"><i class="icon fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="icon fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="icon fab fa-linkedin-in"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        
+        <div class="footer-column footer-column-style-two col-xl-3 col-md-6 col-sm-6">
+        <div class="footer-widget links-widget">
+        <h5 class="widget-title">Contact Us</h5>
+        <div class="widget-content">
+            <ul class="user-links">
+                <li><i class="icon fa fa-phone"></i> <a href="tel:+91 9284811005">+91 9284811005</a><br><a href="tel:+91 7775941573">+91 7775941573</a></li>
+                <li><i class="icon fa fa-envelope-open"></i> <a href="mailto:eagleloanservices2021@gmail.com">eagleloanservices2021@gmail.com</span> </a></li>
+                <li><i class="icon fa fa-map-marker-alt"></i> <a href="#">Flat No 203, 2nd floor, Shivanjali Hights, JSPM road, near Mukesh market, Narhe 411041 </a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        
+        <div class="footer-column col-xl-2 col-md-6 col-sm-6">
+        <div class="footer-widget links-widget">
+        <h5 class="widget-title widget-title-style-two">Quick Links</h5>
+        <div class="widget-content">
+        <ul class="user-links">
+        <li><i class="icon fa fa-chevron-double-right"></i> <a href="index.html">Home</a></li>
+        <li><i class="icon fa fa-chevron-double-right"></i> <a href="about.html">About Us</a></li>
+        <li><i class="icon fa fa-chevron-double-right"></i> <a href="loancalc.html">Calculator</a></li>
+        <li><i class="icon fa fa-chevron-double-right"></i> <a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        
+        <div class="footer-column col-xl-3 col-md-6 col-sm-6">
+        <div class="footer-widget newsletter-widget">
+        <h5 class="widget-title widget-title-style-two">Subscribe Now</h5>
+        <div class="text">We strongly support best<br> practice sharing across our</div>
+        
+        <div class="newsletter-form">
+        <div class="form-group">
+        <div class="input-outer">
+        <span class="icon fal fa-paper-plane"></span>
+        <input type="text" name="Newsletter" placeholder="Get Newsletter" required="">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="footer-bottom">
+        <div class="auto-container">
+        <div class="inner-container">
+        <div class="copyright-text">© Copyrights  All rights reserved. </div>
+        <div class="link-box">
+        <a class="link" href="index.html">Terms &amp; Condition</a>
+        <span> | </span>
+        <a class="link" href="index.html">Privacy </a>
+        <span> | </span>
+        <a class="link" href="index.html">Support</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+
+
+
+
+<!-- Floating Icons Start -->
+                <section>
+                    <div class="icon-c">
+                        <a href="tel:9284811005"><img src="images/phone.png"  alt="Phone"> </a>
+                    </div>
+                    <style>
+                        .icon-c{
+                            margin-top: 500px;
+                            margin-left: 30px;
+                            position: fixed;
+                            transition: 1s;
+                            width: 45px;
+                            left: 20px;
+                            bottom: 115px;
+                            z-index: 150;
+
+                        }
+                        .icon-c img:hover{
+                            border-radius: 100px;
+                        }
+                        .icon-c:hover{
+                            scale: 125%;
+                        }
+                    </style>
+        
+                    </style>
+
+                    <div class="icon-b">
+                        <a href="https://wa.me/message/WN2MKQGXNCIVB1"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+                    </div>
+                    <style>
+
+                        .icon-b{
+                            margin-top: 4-1px;
+                            margin-left: 23px;
+                            position: fixed;
+                            transition: 0.5s;
+                            width: 57px;
+                            height: 50px;
+                            left: 20px;
+                            bottom: 60px;
+                            z-index: 200;
+                        }
+                        .icon-b img:hover{
+                            border-radius: 100px;
+                        }
+                        .icon-b:hover{
+                            scale: 125%;                            
+                        }
+                    </style>
+                    
+                </section>
+        <!-- Floating Icons End -->
+
+
+        
+
+
+
+        <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution.extension.actions.min.js"></script>
+<script src="js/revolution.extension.carousel.min.js"></script>
+<script src="js/revolution.extension.kenburn.min.js"></script>
+<script src="js/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution.extension.migration.min.js"></script>
+<script src="js/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution.extension.video.min.js"></script>
+<script src="js/main-slider-script.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/splitType.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+    <script>
+        function updateValue(id) {
+    document.getElementById(id + '-value').innerText = document.getElementById(id).value;
+    calculateEMI();
+}
+
+function calculateEMI() {
+    // Get input values
+    let amount = document.getElementById('amount').value;
+    let interestRate = document.getElementById('interest').value;
+    let years = document.getElementById('years').value;
+
+    // Calculate monthly interest rate
+    let monthlyInterestRate = (interestRate / 100) / 12;
+    let numberOfPayments = years * 12;
+
+    // Calculate EMI
+    let emi = (amount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, numberOfPayments)) / (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
+    emi = emi.toFixed(2);
+
+    // Update EMI
+    document.getElementById('emi').innerText = emi;
+
+    // Update table
+    let tableBody = document.getElementById('emi-table').querySelector('tbody');
+    tableBody.innerHTML = ''; // Clear previous rows
+
+    let balance = amount;
+    for (let i = 1; i <= numberOfPayments; i++) {
+        let interestPayment = (balance * monthlyInterestRate).toFixed(2);
+        let principalPayment = (emi - interestPayment).toFixed(2);
+        let beginningBalance = balance;
+        balance = (balance - principalPayment).toFixed(2);
+        let endingBalance = balance;
+
+        let row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${i}</td>
+            <td>${beginningBalance}</td>
+            <td>${emi}</td>
+            <td>${principalPayment}</td>
+            <td>${interestPayment}</td>
+            <td>${endingBalance}</td>
+        `;
+        row.style.animation = "tableFadeIn 0.5s ease-in-out";
+        tableBody.appendChild(row);
+    }
+}
+
+// Initial calculation
+calculateEMI();
+
+    </script>
+</body>
+</html>

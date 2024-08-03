@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/settings.css" rel="stylesheet" type="text/css">
+<link href="css/layers.css" rel="stylesheet" type="text/css">
+<link href="css/navigation.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style-layout2.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<link rel="icon" href="images/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+
+
+    <style>
+        body {
+    background-color: #f0f2f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper-content {
+    border-radius: 8px;
+    background: linear-gradient(135deg, #33b8ff 0%, #007bff 100%);
+    color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+   
+}
+
+.wrapper-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-weight: 700;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s;
+}
+
+label:hover {
+    color: #f1c40f;
+}
+
+
+.form-control, .input-group-text {
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-style: oblique;
+}
+
+.form-control:focus, .input-group-text:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #e9faff;
+}
+
+.input-group-prepend .input-group-text {
+    background-color: #e9ecef;
+    transition: background-color 0.3s;
+}
+
+.input-group-prepend .input-group-text:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn {
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+.eligibility-text {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.eligibility-amount {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.form-group{
+    margin-top: 50px;
+}
+
+.icon-c{
+     margin-top: 500px;
+     margin-left: 30px;
+    position: fixed;
+    transition: 1s;
+    width: 45px;
+    left: 20px;
+    bottom: 115px;
+    z-index: 150;
+}
+.icon-c img:hover{
+    border-radius: 100px;
+}
+.icon-c:hover{
+    scale: 125%;
+}
+
+.icon-b{
+    margin-top: 4-1px;
+    margin-left: 23px;
+    position: fixed;
+    transition: 0.5s;
+    width: 57px;
+    height: 50px;
+    left: 20px;
+    bottom: 60px;
+    z-index: 200;
+}
+.icon-b img:hover{
+    border-radius: 100px;
+}
+.icon-b:hover{
+    scale: 125%;                            
+}
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+
+    <!-- Navbar Start -->
+<header class="main-header header-style-two">
+    <div class="header-lower">
+
+<div class="main-box">
+
+
+<div class="nav-logo">
+<div class="logo"><a href="index.html"><img style="width: 20%; margin-left: 70px;" src="images/logo.png" alt="Logo" title="eagleloan"></a></div>
+</div>
+
+<div class="nav-outer" style="padding: 39px 0 -1px;">
+<nav class="nav main-menu" style="margin: 0;">
+<ul class="navigation" style="margin: 0; ">
+<li class="" style="padding: 39px 0 -1px;"><a href="index.html">Home</a>
+
+<li style="padding: 39px 0 -1px;"><a href="about.html">About Us</a></li>
+<li class="dropdown" style="padding: 39px 0 -1px;"><a>Services</a>
+<ul>
+    <li><a href="insurance.html">Insurance</a></li>
+    <li><a href="personaloan.html">Personal loan</a></li>
+    <li><a href="businessloan.html">Business loan</a></li>
+    <li><a href="homeloan.html">Home loan</a></li>
+    <li><a href="carloan.html">Car loan</a></li>
+    <li><a href="educationloan.html">Education loan</a></li>
+</ul>
+</li>
+<li style="padding: 39px 0 -1px;"><a href="loancalc.html">Calculator</a></li>
+<li style="padding: 39px 0 -1px;"><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+</div>
+
+
+<div class="mobile-menu mobile-menu-two">
+<div class="menu-backdrop"></div>
+
+<nav class="menu-box">
+<div class="upper-box">
+<div class="nav-logo" style="width: 30%;"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+<div class="close-btn"><i class="icon fa fa-times"></i></div>
+</div>
+<ul class="navigation clearfix" style="margin: 0;">
+
+</ul>
+<ul class="contact-list-one">
+<li>
+<i class="icon lnr-icon-phone-handset"></i>
+<span class="title">Call Now</span>
+<div class="text"><a href="tel:9284811005">9284811005</a></div>
+</li>
+<li>
+<i class="icon lnr-icon-envelope1"></i>
+<span class="title">Send Email</span>
+<div class="text"><a href="mailto:eagleloanservices2021@gmail.com"><span>eagleloanservices2021@gmail.com</span></a></div>
+</li>
+<li>
+<i class="icon lnr-icon-map-marker"></i>
+<span class="title">Address</span>
+<div class="text">JSPM ROAD, NEAR MUKESH MARKET, NARHE 411041</div>
+</li>
+
+<ul class="social-links">
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+</ul>
+</nav>
+</div>
+
+<div class="search-popup">
+<span class="search-back-drop"></span>
+<button class="close-search"><span class="fa fa-times"></span></button>
+<div class="search-inner">
+<form method="post" action="blog-showcase.html">
+<div class="form-group">
+<input type="search" name="search-field" value="" placeholder="Search..." required="">
+<button type="submit"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div>
+</div>
+
+
+<div class="sticky-header sticky-header-style-two">
+<div class="auto-container">
+<div class="inner-container" style="">
+
+<div class="logo" >
+<a href="index.html" ><img style="width: 200%;" src="images/logo.png" alt=""></a>
+</div>
+
+<div class="nav-outer">
+
+<nav class="main-menu">
+<div class="navbar-collapse show collapse clearfix">
+<ul class="navigation clearfix">
+
+</ul>
+</div>
+</nav>
+
+<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+</div>
+</div>
+</div>
+</div>
+
+</header>
+<!-- Navbar End -->
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="wrapper-content bg-white p-4 shadow rounded shadow-hover">
+                    <div class="loan-eligibility-block">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2 style="font-size: -1px; color:black;" class="mb-4">Check Your Eligibility for Loans</h2>
+                                <form name="formval2" class="form-horizontal loan-eligibility-form">
+                                    <div class="form-group">
+                                        <label for="pr_amt2" class="control-label">Home Loan Required:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">₹</span>
+                                            </div>
+                                            <input style="height: 49px;" type="number" class="form-control" id="pr_amt2" name="pr_amt2" placeholder="Enter Loan Amount">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="NetIncome" class="control-label">Net Income per Month:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">₹</span>
+                                            </div>
+                                            <input style="height: 49px;" type="number" class="form-control" id="NetIncome" name="NetIncome" placeholder="Excluding LTA and Medical Allowances">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ExLoan" class="control-label">Existing Loan Commitments:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">₹</span>
+                                            </div>
+                                            <input style="height: 49px;" type="number" class="form-control" id="ExLoan" name="ExLoan" placeholder="(per month)">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="period2" class="control-label">Loan Tenure:</label>
+                                        <input type="number" class="form-control" id="period2" name="period2" placeholder="(in years)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="int_rate2" class="control-label">Rate of Interest:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                            <input style="height: 49px;" type="number" class="form-control" id="int_rate2" value="9.5" name="int_rate2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button type="button" class="btn btn-success" onclick="eligiable()">Check Eligibility</button>
+                                        <button type="reset" class="btn btn-secondary">Reset All</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2 style="font-size: -1px; color: black;" class="mb-4">How Much Loan You Are Eligible For?</h2>
+                                <div class="loan-eligibility-info">
+                                    <form name="formval3" class="">
+                                        <div class="form-group">
+                                            <output class="col-12 eligibility-text" name="field13"></output>
+                                            <output class="col-12 eligibility-amount" name="field11"></output>
+                                        </div>
+                                        <div class="form-group">
+                                            <output class="col-12 eligibility-text" name="field12"></output>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<section class="call-to-action" style="margin-bottom: 20px; margin-left: 100px;">
+        <div class="bg bg-image" style="background-image: url(images/bg-call-1.jpg)"></div>
+        <div class="auto-container">
+        <div class="outer-box">
+        <div class="title-box">
+        <h3 class="title">Simply share your contacts <br>with us and we will get you</h3>
+        </div>
+        <div class="btn-box">
+        <ul class="list-style-one">
+        <li><i class="icon fa-light fa-phone-volume"></i><a href="tel:9284811005"><span>Call to Our Experts</span><br>+91 9284811005</a></li>
+        </ul>
+        <button class="theme-btn btn-style-one hover-light"><a href="contact.html"><span class="btn-title">Get A quote</span></a><i class="icon fa-regular fa-arrow-right"></i></button>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Footer Section Start -->
+    <footer class="main-footer footer-style-two">
+<div class="bg bg-image" style="background-image:url(images/bg-footer1.jpg);"></div>
+<div class="footer-pattren4 bounce-x"></div>
+
+<div class="widgets-section">
+<div class="auto-container">
+<div class="row">
+
+<div class="footer-column col-xl-4 col-md-6 col-sm-6">
+<div class="footer-widget about-widget" >
+<div class="logo" style="width: 30%;"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+<div class="text">Eagle Loan - Your go-to for personalized financial solutions. We empower individuals and businesses with transparent, reliable, and accessible loan services. Your trusted financial partner for success.</div>
+<ul class="social-icon">
+<li><a href="#"><i class="icon fa-brands fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="icon fa-brands fa-twitter"></i></a></li>
+<li><a href="#"><i class="icon fab fa-linkedin-in"></i></a></li>
+</ul>
+</div>
+</div>
+
+<div class="footer-column footer-column-style-two col-xl-3 col-md-6 col-sm-6">
+<div class="footer-widget links-widget">
+<h5 class="widget-title">Contact Us</h5>
+<div class="widget-content">
+<ul class="user-links">
+<li><i class="icon fa fa-phone"></i> <a href="tel:+91 9284811005">+91 9284811005</a><br><a href="tel:+91 7775941573">+91 7775941573</a></li>
+<li><i class="icon fa fa-envelope-open"></i> <a href="mailto:eagleloanservices2021@gmail.com">eagleloanservices2021@gmail.com</a></li>
+<li><i class="icon fa fa-map-marker-alt"></i> <a href="#">SHIVANJALI HIGHTS, JSPM ROAD, NEAR MUKESH MARKET, NARHE 411041</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="footer-column col-xl-2 col-md-6 col-sm-6">
+<div class="footer-widget links-widget">
+<h5 class="widget-title widget-title-style-two">Quick Links</h5>
+<div class="widget-content">
+<ul class="user-links">
+<li><a href="index.html">Home</a>
+<li><a href="about.html">About Us</a></li>
+<li><a href="loancalc.html">Calculator</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="footer-column col-xl-3 col-md-6 col-sm-6">
+<div class="footer-widget newsletter-widget">
+<h5 class="widget-title widget-title-style-two">Subscribe Now</h5>
+<div class="text">We strongly support best<br> practice sharing across our</div>
+
+<div class="newsletter-form">
+<div class="form-group">
+<div class="input-outer">
+<span class="icon fal fa-paper-plane"></span>
+<input type="text" name="Newsletter" placeholder="Get Newsletter" required="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="auto-container">
+<div class="inner-container">
+<div class="copyright-text">© Copyrights Eagle Loan Services All rights reserved. </div>
+<div class="link-box">
+<a class="link" href="index.html">Terms &amp; Condition</a>
+<span> | </span>
+<a class="link" href="index.html">Privacy </a>
+<span> | </span>
+<a class="link" href="index.html">Support</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Footer Section End -->
+
+
+
+
+    <!-- Floating Icons Start -->
+                <section>
+                    <div class="icon-c">
+                        <a href="tel:9284811005"><img style="width: 45PX;" src="images/phone.png"  alt="Phone"> </a>
+                    </div>                        
+                        
+
+                    <div class="icon-b">
+                        <a href="https://wa.me/message/WN2MKQGXNCIVB1"><img style="width: 57PX;" src="images/whatsapp.png" alt="WhatsApp"></a>
+                    </div>
+                    
+                    
+                </section>
+        <!-- Floating Icons End -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution.extension.actions.min.js"></script>
+<script src="js/revolution.extension.carousel.min.js"></script>
+<script src="js/revolution.extension.kenburn.min.js"></script>
+<script src="js/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution.extension.migration.min.js"></script>
+<script src="js/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution.extension.video.min.js"></script>
+<script src="js/main-slider-script.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/splitType.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/knob.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/script.js"></script>
+    <script>
+        function eligiable() {
+            let loanAmount = document.forms['formval2']['pr_amt2'].value;
+            let netIncome = document.forms['formval2']['NetIncome'].value;
+            let existingLoan = document.forms['formval2']['ExLoan'].value;
+            let tenure = document.forms['formval2']['period2'].value;
+            let interestRate = document.forms['formval2']['int_rate2'].value;
+
+            let eligibilityAmount = calculateEligibility(loanAmount, netIncome, existingLoan, tenure, interestRate);
+            
+            document.forms['formval3']['field11'].innerHTML = `₹ ${eligibilityAmount}`;
+            document.forms['formval3']['field12'].innerHTML = "Based on the provided information, you are eligible for this loan amount.";
+        }
+
+        function calculateEligibility(loanAmount, netIncome, existingLoan, tenure, interestRate) {
+            let maxEMI = netIncome * 0.6 - existingLoan;
+            let maxLoan = (maxEMI * 12 * tenure) / (1 + (interestRate / 100));
+            return maxLoan.toFixed(2);
+        }
+    </script>
+</body>
+</html>
